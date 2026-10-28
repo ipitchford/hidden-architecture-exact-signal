@@ -1,0 +1,78 @@
+{
+ "schemaVersion": "1.0",
+ "contributionMap": [
+  {
+   "claim": "For every 0<q<1, a four-state exact realisation of the complete stationary binary alternating-renewal law P_q dissipates strictly less than every three-state realisation; the three-state minimum is (1-q)log(1/q), uniquely attained by the driven ring.",
+   "unit": "statement",
+   "paperLocation": "abstract; Theorem 1",
+   "searches": [
+    {"date": "2026-10-26", "query": "94 literal queries (phase-type entropy production minimal representation; hidden Markov dissipation added states; nonminimal thermodynamic realisation; exact formula fragments)", "corpus": "two general web engines, arXiv full text, publisher pages (literature/search_queries.json, literature/novelty_report.md)"},
+    {"date": "2026-10-26", "query": "14 rerun queries after the all-q strengthening (PH entropy production with state insertion; entropy-reducing hidden-state insertion; atanh/log fragments)", "corpus": "two general web engines (literature/search_queries_rerun_all_q.json, literature/all_q_novelty_rerun.md)"},
+    {"date": "2026-10-28", "query": "Crossref query.bibliographic 'hidden Markov entropy production minimal number of hidden states' (from 2026-09-01); arXiv API entropy production AND hidden AND waiting time, newest first", "corpus": "Crossref REST, arXiv API (retrospective publication-intake check; evidence/intake-search-2026-10-28.txt kept by the publisher)"}
+   ],
+   "closestPriorWork": "Aznagulov (2026, arXiv:2609.14623v1) Sections 8.5-8.8: fixed-dimension attainment, architecture penalty, profitable insertion raised only as a possible route; Ehrich (2021) Section 5 asks how bounds change with hidden-state count",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Sharp entropy infimum 4r sqrt(1-mf0) artanh sqrt(1-mf0) over all finite architectures matching the entrance intensity, mean complete dwell and initial dwell density, with nonattainment for 0<mf0<1 and zero cost attained for mf0>=1.",
+   "unit": "statement",
+   "paperLocation": "Theorems 2 and 5, Corollary 4",
+   "searches": [
+    {"date": "2026-10-26", "query": "entropy production waiting time density at zero mean Bhattacharyya Jeffreys divergence; 'entropy production' 'initial' 'dwell' density bound; 'entropy production' 'mean' 'f(0)'", "corpus": "two general web engines, arXiv full text (audit/coordinator_sources.md, literature/novelty_report.md)"}
+   ],
+   "closestPriorWork": "Skinner and Dunkel (2021, PNAS, eq. A29) related functional shape for different constrained statistics; Anonymous (2026, Evidence Press, doi:10.5281/zenodo.23118474) earlier floor for the same benchmark",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Law-preserving insertion of an unobservable B phase whose extra decay mode cancels from the dwell transform, with an explicit first-order entropy derivative.",
+   "unit": "method",
+   "paperLocation": "Section 3, Appendix B",
+   "searches": [
+    {"date": "2026-10-26", "query": "PH entropy production with state insertion and extra phases; nonminimal phase-type representation unobservable mode", "corpus": "two general web engines, arXiv (literature/all_q_novelty_rerun.md)"}
+   ],
+   "closestPriorWork": "Nonminimal phase-type representations and positive realisation theory (O'Cinneide 1990; Benvenuti and Farina 2004) are known; the thermodynamic use is the contribution",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Affinity (Bhattacharyya) lower bound on the symmetric relative entropy, applied at the observed boundary.",
+   "unit": "method",
+   "paperLocation": "Lemma 3, Section 4",
+   "searches": [
+    {"date": "2026-10-26", "query": "'Jeffreys divergence' 'Bhattacharyya' sharp lower bound; Sason symmetric divergence bounds", "corpus": "two general web engines, arXiv full text"}
+   ],
+   "closestPriorWork": "Sason (2015) symmetric-divergence bounds; the lemma is self-contained and its relation stated",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Exact rational certification by rational generators, stationary vectors, polynomial identities and rational log-series enclosures.",
+   "unit": "method",
+   "paperLocation": "Appendix C",
+   "searches": [
+    {"date": "2026-10-26", "query": "standard exact arithmetic techniques; no novelty search needed beyond classical log series", "corpus": "textbook methods"}
+   ],
+   "closestPriorWork": "Classical rational log-series bounds; only the application is new",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {"citation": "Aznagulov (2026), arXiv:2609.14623v1", "usedFor": "fixed-dimension attainment of V_n, architecture penalty, exact-law benchmark", "readWhat": "Sections 8.5-8.8", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/html/2609.14623v1, Sections 8.5-8.8"},
+  {"citation": "Ehrich (2021), J. Stat. Mech. 083214", "usedFor": "fixed hidden-state-count assumption and the architecture question", "readWhat": "Sections 4-5", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/html/2105.08803v2"},
+  {"citation": "Skinner and Dunkel (2021), PRL 127, 198101 and PNAS 118, e2024300118", "usedFor": "waiting-time entropy bounds; related functional shape", "readWhat": "full PRL text and supplement Lemma 2/A14; PNAS A29", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/html/2105.08681v2; https://math.mit.edu/~dunkel/Papers/2020SkDu_EPR.pdf"},
+  {"citation": "Anonymous (2026), An architecture-independent dissipation floor for alternating-renewal observations, v1.1, Evidence Press", "usedFor": "earlier certified floor for the benchmark (the 108x comparison)", "readWhat": "full manuscript", "date": "2026-10-26", "evidenceLocator": "https://doi.org/10.5281/zenodo.23118474"},
+  {"citation": "Sason (2015), IEEE Trans. Inf. Theory 61, 701-707", "usedFor": "relation to the affinity lemma", "readWhat": "full paper", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/html/1403.7164v7"},
+  {"citation": "Owen, Kolchinsky and Wolpert (2019), New J. Phys. 21, 013022", "usedFor": "hidden states needed to implement a conditional distribution; scope difference", "readWhat": "full manuscript", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/pdf/1709.00765"},
+  {"citation": "Nitzan, Ghosal and Bisker (2023), Phys. Rev. Research 5, 043251", "usedFor": "observed-statistics entropy bounds", "readWhat": "full preprint", "date": "2026-10-26", "evidenceLocator": "https://arxiv.org/pdf/2212.01783"}
+ ],
+ "limitationTriage": [
+  {"limitation": "Exact value of V_4(P_q)", "closingQuestion": "Can the numerical optimum 2.765996 be certified as the global four-state minimum?", "triedOrSearched": "Multi-start numerical optimisation over the q-grid (extension/v4_*.json); improved rational certificate within 2e-6 of the numerical optimum", "estimatedCost": "open research problem (global polynomial optimisation certificate)", "cheap": false, "decision": "OPEN", "reasonOpen": "Needs a global optimality certificate", "whyNotClosedNow": "Not cheap"},
+  {"limitation": "Exact value and finite attainment of V_inf(P_q) under the fixed complete law", "closingQuestion": "Is there a compactness argument or an exactly compatible improving sequence?", "triedOrSearched": "Five- and six-state numerical searches (extension/v5_*, v6_*); rational five-state certificate", "estimatedCost": "open research problem", "cheap": false, "decision": "OPEN", "reasonOpen": "Open research question", "whyNotClosedNow": "Not cheap"},
+  {"limitation": "Estimating f_0 from finite-resolution data (missed events)", "closingQuestion": "Is there a statistical coverage statement for f_0?", "triedOrSearched": "Stated as a non-claim; Hawkes-Jalali-Colquhoun (1990) cited", "estimatedCost": "days", "cheap": false, "decision": "OPEN", "reasonOpen": "Requires new statistical work", "whyNotClosedNow": "Not cheap"},
+  {"limitation": "Positioning against Aznagulov (2026) and the earlier Evidence Press floor", "closingQuestion": "Is the relation stated precisely?", "triedOrSearched": "Comparison table and paragraph added in revision", "estimatedCost": "1 h", "cheap": true, "decision": "CLOSED", "reasonOpen": "", "whyNotClosedNow": ""}
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted review panel and editor (agent)",
+  "date": "2026-10-27",
+  "proposals": ["improved rational four-state witness", "five-state rational witness", "q-grid V4 numerics", "V5/V6 numerics", "certified V4"],
+  "actions": ["done (Proposition 6, extension/verify_improved.py)", "done (Proposition 6, extension/verify_five.py)", "done (extension/, discovery evidence)", "done (extension/, discovery evidence)", "not done; open problem"]
+ }
+}

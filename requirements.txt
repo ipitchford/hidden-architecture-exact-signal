@@ -1,0 +1,5 @@
+# Certificates, replay_all.py and negative_controls.py: Python >= 3.11 standard library only.
+# Figures and numerical exploration only:
+numpy
+scipy
+matplotlib

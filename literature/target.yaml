@@ -1,0 +1,109 @@
+target_id: hidden_architecture_advantage_and_immediate_return_cost
+date: 2026-10-26
+contribution_units:
+  - id: C1
+    type: theorem_and_proof
+    statement: >-
+      For every 0<q<1, the minimum stationary EPR among all irreducible
+      three-state deterministic-binary-labelled CTMC exact realisations of
+      P_q equals (1-q)*log(1/q), achieved uniquely up to B-state relabelling
+      by the homogeneous biased three-cycle.
+    decision: CLEAR_TO_PROVE_WITHIN_RECORDED_CORPUS
+  - id: C2
+    type: exact_counterexample_and_verification
+    statement: >-
+      For every 0<q<1, a constructive finite four-state generator with all
+      off-diagonal rates positive realises exactly the complete stationary
+      law P_q and has EPR below every three-state realisation. Its rates are
+      rational for rational q. Minimum feasible Markov cardinality is not
+      sufficient for thermodynamic optimality.
+    decision: CLEAR_TO_PROVE_WITHIN_RECORDED_CORPUS
+  - id: C3
+    type: sharp_optimisation_and_nonattainment
+    statement: >-
+      For every r,m,f0>0 with 0<r*m<1, the EPR infimum over all finite
+      irreducible stationary CTMCs with a nontrivial deterministic binary
+      partition and B entrance statistics (r,m,f0) is
+      4*r*sqrt(1-m*f0)*atanh(sqrt(1-m*f0)) when m*f0<1, and zero otherwise.
+      The positive infimum is unattained but approached with three states;
+      the zero infimum is attained reversibly with at most three states.
+    decision: CLEAR_TO_PROVE_WITHIN_RECORDED_CORPUS
+definitions:
+  P_q: "A~Exp(1+q); B Laplace=(2*q*z/(1+q)+1+q+q^2)/(z^2+2*(1+q)*z+1+q+q^2)"
+  generator: row
+  stationary_distribution: row
+  entropy: "sum_{i<j}(pi_i*Q_ij-pi_j*Q_ji)*log(pi_i*Q_ij/(pi_j*Q_ji))"
+  reversal: ordinary_even_variables
+  logarithm: natural
+  k_B: 1
+  dwell_sampling: stationary_entrance_sampling_of_complete_visits
+  Jeffreys: "D(p||q)+D(q||p)"
+  affinity: "sum_i sqrt(p_i*q_i)"
+normalised_fingerprints:
+  q_instances: ["1/20", "1/4", "1/2"]
+  transforms:
+    - "(800*z+8841)/(8400*z^2+17640*z+8841)"
+    - "(32*z+105)/(80*z^2+200*z+105)"
+    - "(8*z+21)/(12*z^2+36*z+21)"
+  killed_polynomial: "z^2+2*(1+q)*z+1+q+q^2"
+  ring_characteristic: "z*(z^2+3*(1+q)*z+3*(1+q+q^2))"
+  ring_matrix: "[[-1-q,1,q],[q,-1-q,1],[1,q,-1-q]]"
+  witness_matrix: "[[-21/20,4781/4800,31/1200,9/320],[1/20,-79/60,19/15,0],[4/5,1/3,-131/60,21/20],[21/20,0,1/5,-5/4]]"
+  witness_pi: "[1/3,217/720,7/36,41/240]"
+  witness_log_ratios: ["683/31", "560/31", "287/15", "589/100", "245/41"]
+  scalar_two_phase_inequality: >-
+    ((1+R*K)/(1-R*K))*log((1-q*R^2)*(1-q^2*K^2)/
+    ((q^2-R^2)*(q-K^2))) >= 3*log(1/q)
+    for abs(R)<q, abs(K)<sqrt(q).
+  initial_density_bound: "4*r*sqrt(1-m*f0)*atanh(sqrt(1-m*f0))"
+  affinity_lemma: "J(p,q)>=4*sqrt(1-affinity^2)*atanh(sqrt(1-affinity^2))"
+  insertion_derivative: "u^2/(1+u)*(3-log(1-u^2)/2-3*atanh(u)/u), u=(1-q)/(1+q)"
+  insertion_series_coefficients: ["-1/2", "-7/20", "-11/42", "-5/24", "-19/110", "-23/156"]
+  all_q_finite_instances: all_q_fingerprints.json
+  statistics_instances:
+    - {r: "1/3", m: "2", f0: "3/8", exact_infimum: "log(3)/3"}
+    - {r: "1/3", m: "2", f0: "4/9", exact_infimum: "2*log(2)/9"}
+    - {r: "1/3", m: "2", f0: "8/25", exact_infimum: "4*log(2)/5"}
+aliases:
+  - phase-type realisation
+  - hidden Markov minimal realisation
+  - positive realisation
+  - algebraic degree versus PH order
+  - exact waiting-time law
+  - state splitting and state-space expansion
+  - hidden-state dissipation minimisation
+  - stationary reset and flux merge
+  - unicyclic affinity
+  - fixed-spectrum entropy
+  - entry and exit distributions
+  - immediate-return density
+  - initial waiting density
+  - Bhattacharyya affinity and Jeffreys divergence
+  - Hellinger discrimination
+exclusions:
+  - No exact all-dimension optimum for P_q.
+  - No optimality assertion for the four-state witness.
+  - No historical priority or first-proof assertion.
+  - No statistical robustness or finite-resolution estimator claim.
+  - No contradiction of fixed-complete-law attainment from statistics-only nonattainment.
+collisions:
+  - qualitative_irreversibility_detection
+  - full_law_model_fitting_programme
+  - stationary_flux_reset_merge
+  - existing_EP_zero_floor_classification_and_covariance_stability
+bibliographic_uncertainties:
+  - Exact earliest affinity-Jeffreys inequality attribution not located.
+  - Jia-Chen2015 and Liu-Yao-Zhang2025 not inspected in full.
+related_sources:
+  - "Ehrich2021, doi:10.1088/1742-5468/ac150e, arxiv:2105.08803v2, Section5"
+  - "Nitzan-Ghosal-Bisker2023, doi:10.1103/PhysRevResearch.5.043251"
+  - "Skinner-Dunkel2021PRL, doi:10.1103/PhysRevLett.127.198101"
+  - "Skinner-Dunkel2021PNAS, doi:10.1073/pnas.2024300118, App.A28-A29"
+  - "Aznagulov2026, arxiv:2609.14623v1"
+  - "AnonymousEP2026, github:ipitchford/hidden-dissipation-floor/PAPER.tex"
+  - "Sason2015, doi:10.1109/TIT.2014.2387065"
+query_log: search_queries.json
+structural_rerun_query_log: search_queries_rerun_all_q.json
+structural_rerun_report: all_q_novelty_rerun.md
+report: novelty_report.md
+

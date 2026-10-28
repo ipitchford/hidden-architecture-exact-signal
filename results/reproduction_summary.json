@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "python": "3.11.14",
+  "checks": [
+    {
+      "script": "code/exact_certificate.py",
+      "exit_code": 0,
+      "sha256": "4c85f0210db8e467f9d1c54952aaca17783003a45bd6a8036681f9e23ff8ba43",
+      "seconds": 0.048,
+      "log": "results/reproduction_logs/exact_certificate.txt"
+    },
+    {
+      "script": "two_phase/verify_two_phase.py",
+      "exit_code": 0,
+      "sha256": "39655727ac43a47a30e0741fd53e056207157d17db07f1e2afaa6425ad553d38",
+      "seconds": 0.481,
+      "log": "results/reproduction_logs/verify_two_phase.txt"
+    },
+    {
+      "script": "two_phase/audit_four_state.py",
+      "exit_code": 0,
+      "sha256": "b4c9cd4de1370566cf2533274b6a51d0616014e97d3d5adcb0cc62725950092a",
+      "seconds": 0.119,
+      "log": "results/reproduction_logs/audit_four_state.txt"
+    },
+    {
+      "script": "two_phase/verify_all_q_construction.py",
+      "exit_code": 0,
+      "sha256": "12a7ed0122bc0c16228c197e10408c10d6ad4a731d7423ee1bf07d45b6392126",
+      "seconds": 0.045,
+      "log": "results/reproduction_logs/verify_all_q_construction.txt"
+    },
+    {
+      "script": "global_bound/boundary_checks.py",
+      "exit_code": 0,
+      "sha256": "794f67ee91a8660ecacaac6b93cae4b3def65ccde0a9248afb06e2eec82d54de",
+      "seconds": 0.178,
+      "log": "results/reproduction_logs/boundary_checks.txt"
+    },
+    {
+      "script": "extension/verify_improved.py",
+      "exit_code": 0,
+      "sha256": "739869a7ce1bb020532429a8af3d54f6a6a12a0a483a255133307f6b372108f8",
+      "seconds": 0.053,
+      "log": "results/reproduction_logs/verify_improved.txt"
+    },
+    {
+      "script": "extension/verify_five.py",
+      "exit_code": 0,
+      "sha256": "78a3dfbd91b7f45305b6df2219dcf8c2818e853c893cc7f30df49b119985a466",
+      "seconds": 0.058,
+      "log": "results/reproduction_logs/verify_five.txt"
+    },
+    {
+      "script": "review/referee_checks.py",
+      "exit_code": 0,
+      "sha256": "665feffc5fe6104e5d7ca326bf706585c7f21ee6421d6b98f839298b765d8fd2",
+      "seconds": 0.075,
+      "log": "results/reproduction_logs/referee_checks.txt"
+    }
+  ],
+  "claims": "Computations support the written analytic proofs; finite parameter checks are not the universal proof.",
+  "optional_figures_rebuilt": false,
+  "optional_pdf_rebuilt": false,
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "matplotlib": "3.11.2"
+}

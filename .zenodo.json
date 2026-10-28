@@ -1,0 +1,35 @@
+{
+  "title": "Hidden architecture and the thermodynamic cost of an exact stochastic signal",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Experiments often see only a coarse two-level signal (a channel open or shut, a motor bound or unbound) produced by a hidden Markov network of unknown size. One model-based way to bound the network's dissipation is to fit the smallest hidden model that reproduces the signal and minimise entropy production over it. This paper shows, with an exact example, that the smallest model can overstate the least possible dissipation even when the signal is known perfectly.</p><p>For a binary alternating-renewal family P<sub>q</sub> (0&lt;q&lt;1), three hidden states are the fewest that reproduce the signal, and the exact three-state entropy minimum is (1&minus;q)log(1/q), attained uniquely by the homogeneous driven ring. For every q an explicit finite four-state model reproduces the same complete stationary observed law and dissipates strictly less. At q=1/20 exact rational four- and five-state models have certified costs 2.7730766578&hellip;, 2.7659977105&hellip; and 2.7469854029&hellip;, all below the three-state minimum 2.8459456598&hellip;. Over all finite hidden architectures matching only the entrance intensity r, mean complete dwell m and initial dwell density f<sub>0</sub>, the exact entropy infimum is 4r&radic;(1&minus;mf<sub>0</sub>) artanh&radic;(1&minus;mf<sub>0</sub>) when 0&lt;mf<sub>0</sub>&lt;1; no finite model attains it. For the benchmark this gives a floor about 108 times the one certified in an earlier Evidence Press candidate. The exact four-state and unrestricted minima remain open.</p><p>The archive contains the 20-page manuscript (PDF and LaTeX source), standard-library exact certificates, supporting checks, numerical discovery records, a bounded prior-art audit, the public review record, a replay driver, semantic negative controls, CI and SHA-256 sums. Assurance boundary: written proofs; exact rational certificates; producer-side replay from a clean copy; internal AI-assisted review (five simulated reviewer roles, adversarial reviews by a different model, a targeted proof audit and a verification re-review). This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23721621",
+  "publication_date": "2026-10-28",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "stochastic thermodynamics",
+    "entropy production",
+    "hidden Markov models",
+    "phase-type distributions",
+    "thermodynamic inference",
+    "alternating renewal process",
+    "exact certificate"
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/ipitchford/hidden-architecture-exact-signal/tree/v1.0.0-candidate", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://evidencepress.org/releases/hidden-architecture-exact-signal/", "relation": "isDocumentedBy", "scheme": "url"},
+    {"identifier": "10.5281/zenodo.23118474", "relation": "references", "scheme": "doi"},
+    {"identifier": "arXiv:2609.14623", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "10.1088/1742-5468/ac150e", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.1103/PhysRevLett.127.198101", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.1073/pnas.2024300118", "relation": "references", "scheme": "doi"}
+  ],
+  "notes": "Original code (*.py, *.sh, CI workflow) is released under the MIT licence; see LICENSES.md in the archive."
+}

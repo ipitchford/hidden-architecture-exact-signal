@@ -1,0 +1,573 @@
+{
+  "search_date": "2026-10-26",
+  "agent": "hidden_literature",
+  "scope": "Formula-first bounded search for exact-law three-to-four-state dissipation advantage and sharp initial dwell-density bound",
+  "query_count": 94,
+  "limitations": "Search engine retrieval, not exhaustive indexing; full texts checked only where documented in novelty_report.md; no author enquiry or historical priority certification.",
+  "entries": [
+    {
+      "id": 1,
+      "batch": 1,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"entropy production\" \"two\""
+    },
+    {
+      "id": 2,
+      "batch": 1,
+      "engine": "system2_search_query",
+      "query": "\"minimum entropy production\" \"waiting time distribution\" exact"
+    },
+    {
+      "id": 3,
+      "batch": 1,
+      "engine": "system2_search_query",
+      "query": "\"phase type\" \"reversible\" \"representation\" minimum"
+    },
+    {
+      "id": 4,
+      "batch": 1,
+      "engine": "system2_search_query",
+      "query": "\"hidden\" \"dissipation\" \"two-phase\""
+    },
+    {
+      "id": 5,
+      "batch": 2,
+      "engine": "system1_search_query",
+      "query": "\"phase-type\" \"entropy production\" minimum"
+    },
+    {
+      "id": 6,
+      "batch": 2,
+      "engine": "system1_search_query",
+      "query": "\"two-phase\" \"dissipation\" Markov"
+    },
+    {
+      "id": 7,
+      "batch": 2,
+      "engine": "system1_search_query",
+      "query": "\"phase-type\" \"reversible\" representation entropy"
+    },
+    {
+      "id": 8,
+      "batch": 3,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"two\" \"entropy\" representation minimization"
+    },
+    {
+      "id": 9,
+      "batch": 3,
+      "engine": "system2_search_query",
+      "query": "\"waiting time\" \"full distribution\" \"minimum entropy\""
+    },
+    {
+      "id": 10,
+      "batch": 3,
+      "engine": "system2_search_query",
+      "query": "\"waiting time\" \"entropy production\" \"three-state\" optimal"
+    },
+    {
+      "id": 11,
+      "batch": 3,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"two-dimensional\" canonical representation"
+    },
+    {
+      "id": 12,
+      "batch": 4,
+      "engine": "system2_search_query",
+      "query": "\"Universal bounds on entropy production inferred from observed statistics\""
+    },
+    {
+      "id": 13,
+      "batch": 4,
+      "engine": "system2_search_query",
+      "query": "\"Identification and quantification of irreversibility\" arxiv"
+    },
+    {
+      "id": 14,
+      "batch": 4,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"entropy\" \"Mészáros\" \"2012\""
+    },
+    {
+      "id": 15,
+      "batch": 5,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"intertwining\" Markov"
+    },
+    {
+      "id": 16,
+      "batch": 5,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"minimal representation\" \"degree two\""
+    },
+    {
+      "id": 17,
+      "batch": 5,
+      "engine": "system2_search_query",
+      "query": "\"phase-type\" \"two\" \"relative entropy\" representation"
+    },
+    {
+      "id": 18,
+      "batch": 5,
+      "engine": "system2_search_query",
+      "query": "\"hidden Markov\" \"minimal realization\" \"entropy production\""
+    },
+    {
+      "id": 19,
+      "batch": 6,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"three state\" \"eigenvalues\" minimum"
+    },
+    {
+      "id": 20,
+      "batch": 6,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"fixed spectrum\" Markov chain"
+    },
+    {
+      "id": 21,
+      "batch": 6,
+      "engine": "system2_search_query",
+      "query": "\"dissipation\" \"coherence\" \"uniform\" \"three\" Markov"
+    },
+    {
+      "id": 22,
+      "batch": 7,
+      "engine": "system2_search_query",
+      "query": "\"three-state\" \"minimal entropy production\" oscillations"
+    },
+    {
+      "id": 23,
+      "batch": 7,
+      "engine": "system2_search_query",
+      "query": "\"fixed eigenvalues\" \"entropy production\" Markov"
+    },
+    {
+      "id": 24,
+      "batch": 7,
+      "engine": "system2_search_query",
+      "query": "\"Markov\" \"spectrum\" \"entropy production\" \"minimum\" ring"
+    },
+    {
+      "id": 25,
+      "batch": 7,
+      "engine": "system2_search_query",
+      "query": "\"coherence\" \"entropy production\" \"three-state\" bound"
+    },
+    {
+      "id": 26,
+      "batch": 8,
+      "engine": "system1_search_query",
+      "query": "\"three-state\" \"entropy production\" \"spectral\" minimum"
+    },
+    {
+      "id": 27,
+      "batch": 8,
+      "engine": "system1_search_query",
+      "query": "\"entropy production\" \"spectrum\" \"unicyclic\" minimum"
+    },
+    {
+      "id": 28,
+      "batch": 8,
+      "engine": "system1_search_query",
+      "query": "\"entropy production\" \"eigenvalues\" \"three\" bound minimum"
+    },
+    {
+      "id": 29,
+      "batch": 9,
+      "engine": "system2_search_query",
+      "query": "Amann Schmiedl Seifert \"three-state\" \"2010\""
+    },
+    {
+      "id": 30,
+      "batch": 9,
+      "engine": "system2_search_query",
+      "query": "\"Can one identify nonequilibrium in a three-state system\""
+    },
+    {
+      "id": 31,
+      "batch": 9,
+      "engine": "system2_search_query",
+      "query": "\"three-state\" \"entropy\" \"minimal\" \"waiting\""
+    },
+    {
+      "id": 32,
+      "batch": 10,
+      "engine": "system2_search_query",
+      "query": "\"A second perspective\" \"Amann\" pdf"
+    },
+    {
+      "id": 33,
+      "batch": 10,
+      "engine": "system2_search_query",
+      "query": "\"entropy\" \"state-space expansion\" \"hidden\" dissipation"
+    },
+    {
+      "id": 34,
+      "batch": 10,
+      "engine": "system2_search_query",
+      "query": "\"minimal realization\" \"dissipation\" Markov hidden"
+    },
+    {
+      "id": 35,
+      "batch": 11,
+      "engine": "system2_search_query",
+      "query": "\"eigenvalues\" \"entropy production\" \"three-state\" minimization"
+    },
+    {
+      "id": 36,
+      "batch": 11,
+      "engine": "system2_search_query",
+      "query": "\"dissipation\" \"three-state\" \"optimal\" oscillation"
+    },
+    {
+      "id": 37,
+      "batch": 11,
+      "engine": "system2_search_query",
+      "query": "\"Thermodynamic bounds on\" \"oscillations\" unicyclic Barato Seifert"
+    },
+    {
+      "id": 38,
+      "batch": 11,
+      "engine": "system2_search_query",
+      "query": "\"state splitting\" \"entropy production\" hidden"
+    },
+    {
+      "id": 39,
+      "batch": 12,
+      "engine": "system2_search_query",
+      "query": "\"inverse eigenvalue\" \"entropy production\""
+    },
+    {
+      "id": 40,
+      "batch": 12,
+      "engine": "system2_search_query",
+      "query": "\"fixed spectrum\" \"dissipation\" stochastic"
+    },
+    {
+      "id": 41,
+      "batch": 12,
+      "engine": "system2_search_query",
+      "query": "\"three-state\" \"spectral\" \"minimum dissipation\""
+    },
+    {
+      "id": 42,
+      "batch": 12,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"homogeneous ring\" minimum"
+    },
+    {
+      "id": 43,
+      "batch": 13,
+      "engine": "system2_search_query",
+      "query": "\"Parameter Inference and Nonequilibrium Identification for Markov Networks\""
+    },
+    {
+      "id": 44,
+      "batch": 13,
+      "engine": "system2_search_query",
+      "query": "\"three-state\" \"dissipation\" \"spectral perturbations\""
+    },
+    {
+      "id": 45,
+      "batch": 13,
+      "engine": "system2_search_query",
+      "query": "\"minimum entropy production\" \"eigenvalue\" uniform"
+    },
+    {
+      "id": 46,
+      "batch": 14,
+      "engine": "system1_search_query",
+      "query": "\"Parameter inference and nonequilibrium identification\" \"arxiv\""
+    },
+    {
+      "id": 47,
+      "batch": 14,
+      "engine": "system1_search_query",
+      "query": "\"Nitzan\" \"simpler topology\" counterexample"
+    },
+    {
+      "id": 48,
+      "batch": 14,
+      "engine": "system1_search_query",
+      "query": "\"hidden\" \"dissipation\" \"architecture\" \"minimum\" 2026"
+    },
+    {
+      "id": 49,
+      "batch": 15,
+      "engine": "system2_search_query",
+      "query": "\"Universal minimal cost of coherent biochemical oscillations\" arxiv"
+    },
+    {
+      "id": 50,
+      "batch": 15,
+      "engine": "system2_search_query",
+      "query": "\"Coherence of biochemical oscillations\" \"2017\""
+    },
+    {
+      "id": 51,
+      "batch": 15,
+      "engine": "system2_search_query",
+      "query": "\"Thermodynamic bounds on spectral perturbations\""
+    },
+    {
+      "id": 52,
+      "batch": 16,
+      "engine": "system2_search_query",
+      "query": "\"Entropy production limits all fluctuation oscillations\""
+    },
+    {
+      "id": 53,
+      "batch": 16,
+      "engine": "system2_search_query",
+      "query": "\"three-state\" \"artanh\" \"entropy\""
+    },
+    {
+      "id": 54,
+      "batch": 16,
+      "engine": "system2_search_query",
+      "query": "\"three state\" \"spectral\" \"dissipation\" homogeneous"
+    },
+    {
+      "id": 55,
+      "batch": 17,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"density at zero\" waiting"
+    },
+    {
+      "id": 56,
+      "batch": 17,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"Bhattacharyya\" \"waiting\""
+    },
+    {
+      "id": 57,
+      "batch": 17,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"entry\" \"exit\" \"Jeffreys\""
+    },
+    {
+      "id": 58,
+      "batch": 17,
+      "engine": "system2_search_query",
+      "query": "\"waiting time\" \"initial density\" dissipation"
+    },
+    {
+      "id": 59,
+      "batch": 18,
+      "engine": "system2_search_query",
+      "query": "Jeffreys divergence Bhattacharyya coefficient sharp lower bound atanh"
+    },
+    {
+      "id": 60,
+      "batch": 18,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"initial\" \"waiting-time density\""
+    },
+    {
+      "id": 61,
+      "batch": 18,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"mean\" \"f(0)\""
+    },
+    {
+      "id": 62,
+      "batch": 18,
+      "engine": "system2_search_query",
+      "query": "\"waiting time\" \"density at zero\" equilibrium"
+    },
+    {
+      "id": 63,
+      "batch": 19,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys\" \"Bhattacharyya\" \"tight\" bound"
+    },
+    {
+      "id": 64,
+      "batch": 19,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys\" \"Hellinger\" \"atanh\""
+    },
+    {
+      "id": 65,
+      "batch": 19,
+      "engine": "system1_search_query",
+      "query": "\"entropy production\" \"short-time\" \"waiting\" bound"
+    },
+    {
+      "id": 66,
+      "batch": 20,
+      "engine": "system2_search_query",
+      "query": "\"Bhattacharyya\" \"Jeffreys\" \"arctanh\""
+    },
+    {
+      "id": 67,
+      "batch": 20,
+      "engine": "system2_search_query",
+      "query": "\"Bhattacharyya\" \"Jeffreys\" \"arcosh\""
+    },
+    {
+      "id": 68,
+      "batch": 20,
+      "engine": "system2_search_query",
+      "query": "\"Hellinger\" \"Jeffreys\" \"Gilardoni\""
+    },
+    {
+      "id": 69,
+      "batch": 20,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"waiting time\" \"zero\" \"density\""
+    },
+    {
+      "id": 70,
+      "batch": 21,
+      "engine": "system2_search_query",
+      "query": "\"Jeffreys divergence\" \"Hellinger distance\" tight bound"
+    },
+    {
+      "id": 71,
+      "batch": 21,
+      "engine": "system2_search_query",
+      "query": "\"Bhattacharyya coefficient\" \"Jeffreys divergence\" minimum"
+    },
+    {
+      "id": 72,
+      "batch": 21,
+      "engine": "system2_search_query",
+      "query": "\"Jeffreys\" \"sqrt\" \"Bhattacharyya\""
+    },
+    {
+      "id": 73,
+      "batch": 21,
+      "engine": "system2_search_query",
+      "query": "\"Hellinger\" \"arctanh\" divergence"
+    },
+    {
+      "id": 74,
+      "batch": 22,
+      "engine": "system1_search_query",
+      "query": "\"Tightest bound on hidden entropy production\" arxiv"
+    },
+    {
+      "id": 75,
+      "batch": 22,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys\" \"Hellinger\" \"sharp inequalities\""
+    },
+    {
+      "id": 76,
+      "batch": 22,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys\" \"Bhattacharyya\" minimum divergence inequality"
+    },
+    {
+      "id": 77,
+      "batch": 23,
+      "engine": "system2_search_query",
+      "query": "\"hidden\" \"entropy production\" \"more states\" minimum"
+    },
+    {
+      "id": 78,
+      "batch": 23,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"minimal\" \"realization\""
+    },
+    {
+      "id": 79,
+      "batch": 23,
+      "engine": "system2_search_query",
+      "query": "\"dissipation\" \"phase-type\" \"nonminimal\""
+    },
+    {
+      "id": 80,
+      "batch": 23,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"waiting\" \"f(0)\""
+    },
+    {
+      "id": 81,
+      "batch": 24,
+      "engine": "system2_search_query",
+      "query": "\"entropy\" \"21/20\" \"421\" Markov"
+    },
+    {
+      "id": 82,
+      "batch": 24,
+      "engine": "system2_search_query",
+      "query": "\"2q\" \"1+q+q\" \"entropy\""
+    },
+    {
+      "id": 83,
+      "batch": 24,
+      "engine": "system2_search_query",
+      "query": "\"4781\" \"4800\" \"Markov\""
+    },
+    {
+      "id": 84,
+      "batch": 24,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"sqrt\" \"mean\" \"density\""
+    },
+    {
+      "id": 85,
+      "batch": 25,
+      "engine": "system1_search_query",
+      "query": "\"entropy production\" \"density at zero\" \"waiting\" "
+    },
+    {
+      "id": 86,
+      "batch": 25,
+      "engine": "system1_search_query",
+      "query": "\"entropy production\" \"instantaneous\" \"return\" \"bound\""
+    },
+    {
+      "id": 87,
+      "batch": 25,
+      "engine": "system1_search_query",
+      "query": "\"Bhattacharyya\" \"Jeffreys\" \"bound\" \"sqrt\""
+    },
+    {
+      "id": 88,
+      "batch": 26,
+      "engine": "system2_search_query",
+      "query": "\"Jeffreys\" \"Hellinger\" \"lower bound\" logarithm"
+    },
+    {
+      "id": 89,
+      "batch": 26,
+      "engine": "system2_search_query",
+      "query": "\"symmetrized relative entropy\" \"fidelity\" bound"
+    },
+    {
+      "id": 90,
+      "batch": 26,
+      "engine": "system2_search_query",
+      "query": "\"entropy production\" \"entrance distribution\" \"exit\""
+    },
+    {
+      "id": 91,
+      "batch": 26,
+      "engine": "system2_search_query",
+      "query": "\"dissipation\" \"immediate return\""
+    },
+    {
+      "id": 92,
+      "batch": 27,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys divergence\" \"Bhattacharyya coefficient\" inequality"
+    },
+    {
+      "id": 93,
+      "batch": 27,
+      "engine": "system1_search_query",
+      "query": "\"J-divergence\" \"Hellinger\" \"sharp\""
+    },
+    {
+      "id": 94,
+      "batch": 27,
+      "engine": "system1_search_query",
+      "query": "\"Jeffreys\" \"affinity\" \"inequality\""
+    }
+  ]
+}

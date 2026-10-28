@@ -1,0 +1,18 @@
+{
+  "common_dwell_max_absolute_error": 1.27675647831893e-14,
+  "benchmark_three_state_cost": 2.8459456598762913,
+  "benchmark_four_state_cost": 2.7730766578354284,
+  "unrestricted_lower_bound": 1.8972971065841941,
+  "statistics_family_M_range": [
+    0.5,
+    100.0
+  ],
+  "all_curves_from_explicit_generators": true,
+  "colours": {
+    "plum": "#78465F",
+    "teal": "#2B766B",
+    "ochre": "#A97932",
+    "ink": "#25333B",
+    "grey": "#7B8386"
+  }
+}

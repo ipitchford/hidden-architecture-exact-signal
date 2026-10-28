@@ -1,0 +1,9 @@
+Producer environment for release 1.0.0-candidate (28 October 2026)
+OS: macOS (Darwin 27.0.0), Apple silicon
+Python: 3.11.14 (via uv), run as: uv run python3 -I -B <script>
+Standard library only: every certificate and check run by code/reproduce.py, replay_all.py, negative_controls.py
+Figures and numerical exploration: numpy, scipy, matplotlib (versions in results/environment.json)
+PDF: pdfLaTeX (TeX Live), three passes of paper/manuscript.tex
+CI: GitHub Actions ubuntu-latest, Python 3.11 (.github/workflows/replay.yml)
+code/reproduce.py refuses python -O; the three self-checking certificates also pass under -O.
+Timing and interpreter-version fields in result JSON differ between runs; all decisive fields are exact.

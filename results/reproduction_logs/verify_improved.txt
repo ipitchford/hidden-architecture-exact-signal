@@ -1,0 +1,24 @@
+ok   row sums zero
+ok   off-diagonals nonnegative
+ok   zeros come in reciprocal pairs
+ok   A holding rate 21/20
+ok   alpha 1 = 1
+ok   S 1 = -t
+ok   mu S = -alpha
+ok   mu 1 = 40/21
+ok   mu t = 1
+ok   alpha t = 2/21
+ok   (S^2+(21/10)S+(421/400)I)1 = 0
+ok   mu > 0
+ok   pi sums to 1
+ok   pi Q = 0
+pi = ['1/3', '3650219496/22299185765', '27820291057/133795114590', '39475135027/133795114590']
+mu = ['2085839712/4459837153', '55640582114/93656580213', '78950270054/93656580213']
+present unoriented edges: 5
+ok   stated enclosure 2.765997710527 < sigma < 2.765997710529
+sigma in [2.765997710528, 2.765997710528]
+ok   sigma upper < 2.7670
+ok   sigma upper < 2.773076657 (paper lower bound for sigma(Q_*))
+certified gap to V3 = (19/20)log20 exceeds 0.079947949
+ok   sigma < V3
+PASS

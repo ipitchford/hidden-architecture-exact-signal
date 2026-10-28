@@ -1,0 +1,4 @@
+<string>:1: RuntimeWarning: invalid value encountered in log
+4 4 2.765996910935163
+4 3 inf
+5 3 inf

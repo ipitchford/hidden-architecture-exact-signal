@@ -1,0 +1,69 @@
+target_id: exact_three_observable_dissipation_cost
+search_date: 2026-10-26
+intended_contribution_unit: theorem and explicit sharpness construction
+claim:
+  statement: >
+    Over all finite irreducible stationary continuous-time Markov chains with
+    a deterministic binary partition, prescribed entrance rate r into B,
+    mean complete B dwell m, and entrance-density value f_B(0)=f0,
+    where 0<rm<1 and f0>0, the entropy-production infimum is
+    4r sqrt(1-mf0) atanh sqrt(1-mf0) if mf0<1 and zero otherwise.
+    The positive infimum is not attained by any finite chain but is approached
+    by a three-state family with diverging internal rate. The zero infimum
+    is attained by a reversible chain with at most three states.
+  exclusions:
+    - Full observed law is not kept fixed in the sharpness sequence.
+    - No renewal assumption is needed for the lower bound.
+    - This is not a finite-resolution estimator or statistical confidence statement.
+    - Existing information inequalities are not claimed new.
+normalisation:
+  generator: row
+  entropy: sum over unoriented edges J(pi_i Q_ij,pi_j Q_ji)
+  J: (x-y)*log(x/y)
+  logs: natural
+  k_B: 1
+  reversal: ordinary, all microscopic variables even
+fingerprints:
+  variables: k=m*f0; d=sqrt(1-k); M>d/2
+  affinity_bound: sum sqrt(alpha_i*beta_i) <= sqrt(m*f0)
+  probability_bound: J(alpha,beta) >= 4*sqrt(1-A^2)*atanh(sqrt(1-A^2))
+  sharp_mu: [m/2,m/2]
+  sharp_alpha: [(1+d)/2,(1-d)/2]
+  sharp_t: [(1-d)/m,(1+d)/m]
+  sharp_S: [[-(1+2*M)/m,(2*M+d)/m],[(2*M-d)/m,-(1+2*M)/m]]
+  exact_transform: ((1-d^2)*m*z+1+4*M+d^2)/(m^2*z^2+2*m*(1+2*M)*z+1+4*M+d^2)
+  exact_cost: r*(4*d*atanh(d)+d*log((M+d/2)/(M-d/2)))
+  limit_transform: 1/(1+m*z)
+instances:
+  - q: 1/20
+    r: 7/20
+    m: 40/21
+    f0: 2/21
+    k: 80/441
+    d: 19/21
+    exact_bound: (19/30)*log(20)
+  - q: 1/4
+    r: 5/12
+    m: 8/5
+    f0: 2/5
+    k: 16/25
+    d: 3/5
+    exact_bound: log(2)
+  - q: 1/2
+    r: 1/2
+    m: 4/3
+    f0: 2/3
+    k: 8/9
+    d: 1/3
+    exact_bound: log(2)/3
+aliases:
+  - phase-type waiting-time density
+  - initial dwell density
+  - immediate return density
+  - Palm entry and exit distributions
+  - boundary entropy production
+  - Bhattacharyya affinity and Jeffreys divergence
+  - symmetric f-divergence comparison
+  - constrained Markov realisation
+  - fast hidden equilibration and singular limits
+status: bounded uncertainty pending second independent literature audit

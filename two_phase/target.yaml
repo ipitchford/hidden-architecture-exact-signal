@@ -1,0 +1,40 @@
+target_id: exact_two_phase_entropy_minimum
+date: 2026-10-26
+contribution: theorem_and_complete_proof
+statement: >
+  For every real 0<q<1 the stationary entropy-production minimum among
+  irreducible three-state CTMC exact realisations of the binary alternating
+  renewal law with A~Exp(1+q) and B-transform (2q*z/(1+q)+1+q+q^2)/
+  (z^2+2(1+q)z+1+q+q^2) equals (1-q)log(1/q), uniquely up to B exchange
+  at the uniform biased three-cycle with forward rate 1 and reverse rate q.
+exclusions:
+  - No optimality over three or more B phases.
+  - No reliance on a numerical optimum or unverified fixed-dimension compactness.
+  - No historical priority inferred from negative searches.
+normalisation:
+  generator: row
+  stationary_distribution: row
+  entropy: sum_i<j (pi_i Q_ij-pi_j Q_ji)log(pi_i Q_ij/(pi_j Q_ji))
+  time_unit: forward_ring_rate_is_1
+  reversal: ordinary_even_variables
+fingerprints:
+  reduced_B_denominator: z^2+2*(1+q)*z+1+q+q^2
+  full_Q_characteristic: z*(z^2+3*(1+q)*z+3*(1+q+q^2))
+  q_instances: [1/20, 1/4, 1/2]
+  ring_rows_q_1_20: [[-21/20,1,1/20],[1/20,-21/20,1],[1,1/20,-21/20]]
+  ring_rows_q_1_4: [[-5/4,1,1/4],[1/4,-5/4,1],[1,1/4,-5/4]]
+  ring_rows_q_1_2: [[-3/2,1,1/2],[1/2,-3/2,1],[1,1/2,-3/2]]
+  exact_parameterisation: >
+    x in (0,b), y in (s-sqrt(q),s+sqrt(q));
+    u=(x^2-2*s*x+c)/(y-x), v=-(y^2-2*s*y+c)/(y-x),
+    alpha=((y-b)/(y-x),(b-x)/(y-x)).
+  normalised_inequality: >
+    [(1+R*K)/(1-R*K)] log[(1-q*R^2)(1-q^2*K^2)/
+    ((q^2-R^2)(q-K^2))] >= 3*log(1/q),
+    abs(R)<q, abs(K)<sqrt(q).
+  key_aliases: [phase-type realisation, two-phase PH, unicyclic Markov chain, exact waiting-time law, thermodynamic inference, hidden-state minimisation, fixed-spectrum entropy, cycle affinity, geometric convexity]
+source_boundary: >
+  Aznagulov2026 has full cancellation equations and entropy objective but no
+  solution of the inspected two-phase minimisation. Skinner-Dunkel2021 has
+  moment-constrained optimisation, a different feasible set. Formula-search
+  report records bounded uncertainty; literature teammate does wider review.

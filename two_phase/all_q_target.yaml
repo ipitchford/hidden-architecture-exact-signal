@@ -1,0 +1,40 @@
+target_id: strict_architecture_advantage_all_q
+date: 2026-10-26
+contribution: explicit_constructive_theorem
+statement: >
+  For each real 0<q<1, V4(Pq)<V3(Pq)=(1-q)log(1/q), where Vn is the
+  infimum over at most n total states of finite irreducible CTMC exact
+  stationary deterministic-observation realisations of the alternating
+  renewal law with A~Exp(1+q), B transform (2qz/(1+q)+1+q+q^2)/
+  (z^2+2(1+q)z+1+q+q^2). Every off-diagonal rate of the constructed
+  four-state generator is positive and finite; rates are rational for rationalq.
+exclusions:
+  - No all-architecture optimum or nonattainment conclusion.
+  - No four-state optimality conclusion.
+  - No claim that every finite architecture can be improved.
+  - No historical-priority certification.
+normalisation: Same as target.yaml; ordinary reversal, row generator, natural logs.
+construction:
+  s: 1+q
+  D: 1-q
+  u: D/s
+  z: s/2
+  B_exits: [q,1,z]
+  B_occupation: [1/s-epsilon/2,1/s-epsilon/2,epsilon]
+  B_entrance: [1/s-q*epsilon/s,q/s-q*epsilon/s,2*q*epsilon/s]
+  new_edge_flux_coefficients: [M/2,s*M/4,q*M/2+u,s*M/4+D/2]
+  old_edge_fluxes: [mu_x-epsilon*M/4,q*mu_y-epsilon*(q*M/2+u)/2]
+  exact_constraint: (S^2+2sS+cI)*1=0 and alpha*t=2q/s
+  explicit_parameter_choice: See all_q_architecture_advantage.md equations8and10.
+fingerprints:
+  derivative_limit: u^2/(1+u)*(3-log(1-u^2)/2-3*atanh(u)/u)
+  series_coefficient: (1-4n)/(2n*(2n+1)), n>=1
+  first_coefficients: [-1/2,-7/20,-11/42,-5/24,-19/110,-23/156]
+  full_generator_spectrum_polynomial: lambda*(lambda+kappa)*(lambda^2+3s*lambda+3c)
+  B_spectrum_polynomial: (lambda+kappa)*(lambda^2+2s*lambda+c)
+  extra_rate: kappa=1+s*M/2+epsilon*(s*M/2+u)/(2*(1/s-epsilon/2))
+  exact_sample_qs: [1/1000,1/20,1/4,1/2,3/4,99/100,999/1000]
+  checked_M_at_1_4: 14818/9
+  checked_M_at_1_2: 1586
+aliases: [nonminimal phase-type realisation, thermodynamic realisation, hidden architecture, exact-law entropy minimisation, pole cancellation, phase insertion, state-count thermodynamic separation]
+priority_status: BOUNDED UNCERTAINTY; proved theorem, no claim of first proof.

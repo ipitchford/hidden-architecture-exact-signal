@@ -1,0 +1,63 @@
+target_id: exact_signal_architecture_advantage
+search_date: 2026-10-26
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    In the class of finite irreducible stationary continuous-time Markov chains,
+    with deterministic binary observation and even time-reversal variables, find
+    an observed alternating-renewal law P for which every three-state exact
+    realisation has strictly greater stationary entropy production than one
+    explicit four-state exact realisation. Equality means the entire stationary
+    observed path law. Establish the three-state optimum analytically and the
+    competitor by exact rational identities and certified logarithm bounds.
+    Separately solve the entropy infimum constrained only by the stationary B
+    entry intensity r, mean complete B dwell m, and initial dwell density f(0).
+  exclusions:
+    - No claim that a fixed PH degree bounds all thermodynamically useful phases.
+    - No claim to compute the all-architecture exact-law optimum or decide its attainment.
+    - No priority claim for stationary-flux merging or information-divergence inequalities.
+    - Numerical minima and moment matching alone do not certify the main result.
+source:
+  originating_reference: Aznagulov (2026), Sections 8.5-8.7; Evidence Press (2026), v1.1
+  url: https://arxiv.org/html/2609.14623v1
+normalisation:
+  indices: row generators, states A,B1,B2[,B3]
+  scaling: natural logarithms; Boltzmann constant one; forward reference rate one
+  basis_order: A first, followed by hidden B phases
+  symmetries: [B-state permutation, microscopic time reversal, common time rescaling]
+generating_functions:
+  - name: complete B-dwell Laplace transform
+    expression: ((2*q/(1+q))*z+1+q+q^2)/(z^2+2*(1+q)*z+1+q+q^2)
+    variables: [q, z]
+  - name: q=1/20 primitive rational fingerprint
+    expression: (800*z+8841)/(21*(400*z^2+840*z+421))
+    variables: [z]
+sequences:
+  - name: q=1/20 B-dwell mean and first density value
+    exact_values: [40/21, 2/21]
+  - name: q=1/4 B-dwell mean and first density value
+    exact_values: [8/5, 2/5]
+  - name: q=1/2 B-dwell mean and first density value
+    exact_values: [4/3, 2/3]
+matrices:
+  - name: q=1/20 four-state exact competitor
+    entries:
+      - [-21/20, 4781/4800, 31/1200, 9/320]
+      - [1/20, -79/60, 19/15, 0]
+      - [4/5, 1/3, -131/60, 21/20]
+      - [21/20, 0, 1/5, -5/4]
+aliases:
+  probability: [phase-type representation, alternating renewal, Markov renewal, positive realisation, Palm entrance law]
+  analysis: [rational transfer function, nonminimal realisation, pole cancellation, singular perturbation]
+  combinatorics: [directed cycle currents, weighted graph refinement]
+  mathematical_physics: [hidden entropy production, thermodynamic inference, coarse graining, dissipation minimisation]
+  statistics_optimisation_ml: [model order selection, Jeffreys divergence, Bhattacharyya coefficient, Hellinger affinity, fixed-statistics entropy infimum]
+known_invariants:
+  ring_stationary_distribution: [1/3, 1/3, 1/3]
+  ring_entropy: (1-q)*log(1/q)
+  two_phase_polynomial: z^2+2*(1+q)*z+1+q+q^2
+  boundary_statistic: k=m*f(0)
+  proposed_statistical_infimum_for_k_less_than_one: 4*r*sqrt(1-k)*atanh(sqrt(1-k))
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [arXiv full text, APS, journal and author full texts, web formula searches]

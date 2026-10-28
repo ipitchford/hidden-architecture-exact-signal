@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Hidden architecture and the thermodynamic cost of an exact stochastic signal"
+version: 1.0.0-candidate
+date-released: 2026-10-28
+doi: 10.5281/zenodo.23721621
+authors:
+  - name: Anonymous
+license: CC0-1.0
+repository-code: "https://github.com/ipitchford/hidden-architecture-exact-signal"
+url: "https://evidencepress.org/releases/hidden-architecture-exact-signal/"
+abstract: "Unrefereed research candidate. For a binary alternating-renewal signal known exactly, the smallest hidden Markov model that reproduces it can overstate the least possible dissipation: the exact three-state entropy minimum is (1-q)log(1/q), and for every 0<q<1 an explicit four-state model reproduces the same complete observed law with strictly less entropy production. A sharp lower bound from the entrance intensity, mean dwell and initial dwell density holds for hidden networks of any size; at q=1/20 it is about 108 times the earlier certified floor. Exact rational four- and five-state certificates at q=1/20."
+keywords:
+  - stochastic thermodynamics
+  - entropy production
+  - hidden Markov models
+  - phase-type distributions
+  - thermodynamic inference
+  - alternating renewal process
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23721620
+    description: Concept DOI (all versions)
